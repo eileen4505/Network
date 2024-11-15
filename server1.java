@@ -23,7 +23,7 @@ public class server1 {
             e.printStackTrace();
         }
     }
-wj
+
     private static class ClientHandler implements Runnable {
         private final Socket socket;
 
