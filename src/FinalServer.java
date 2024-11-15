@@ -49,7 +49,7 @@ public class FinalServer {
                         out.println("Incorrect! The correct answer is " + qa[1]);
                     }
                 }
-                out.println("Quiz Finished!");
+                out.println("Quiz Finished! Your final score is " + score);
             } catch (IOException e) {
                 e.printStackTrace();
             } finally {
