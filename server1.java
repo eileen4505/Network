@@ -55,6 +55,7 @@ public class server1 {
                 e.printStackTrace();
             } finally {
                 try {
+
                     socket.close();
                 } catch (IOException e) {
                     e.printStackTrace();
