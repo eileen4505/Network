@@ -8,10 +8,9 @@ public class Server {
     private static final int PORT = 1234;
     private static final int MAX_THREADS = 10;
     private static final List<String[]> QUESTIONS = Arrays.asList(
-            new String[]{"What is the capital of France?", "Paris"},
-            new String[]{"What is 5 + 7?", "12"},
-            new String[]{"Solve for x: 3x + 12 = 24", "4"},
-            new String[]{"Who wrote 'Hamlet'?", "Shakespeare"}
+            new String[]{"Which country is the origin of the Olympic Games?", "Greece"},
+            new String[]{"What is the hardest natural substance on Earth?", "Diamond"},
+            new String[]{"What is the freezing point of water in Celsius?", "0"}
     );
 
     private static final ExecutorService threadPool = Executors.newFixedThreadPool(MAX_THREADS);
