@@ -46,7 +46,7 @@ public class FinalServer {
                         out.println("Correct!");
                         score++;
                     } else {
-                        out.println("Incorrect!");
+                        out.println("Incorrect! The correct answer is " + qa[1]);
                     }
                 }
                 out.println("Quiz Finished!");
