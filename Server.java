@@ -2,13 +2,12 @@ import java.io.*;
 import java.net.*;
 import java.util.*;
 
-public class server1 {
+public class Server {
     private static final int PORT = 1234;
     private static final List<String[]> QUESTIONS = Arrays.asList(
-            new String[]{"What is the capital of France?", "Paris"},
-            new String[]{"What is 5 + 7?", "12"},
-            new String[]{"Solve for x: 3x + 12 = 24", "4"},
-            new String[]{"Who wrote 'Hamlet'?", "Shakespeare"}
+            new String[]{"Which country is the origin of the Olympic Games?", "Greece"},
+            new String[]{"What is the hardest natural substance on Earth?", "Diamond"},
+            new String[]{"What is the freezing point of water in Celsius?", "0"}
     );
 
     public static void main(String[] args) {
@@ -47,10 +46,10 @@ public class server1 {
                         out.println("Correct!");
                         score++;
                     } else {
-                        out.println("Incorrect! The correct answer is " + qa[1]);
+                        out.println("Incorrect!");
                     }
                 }
-                out.println("Quiz Over! Your final score is: " + score);
+                out.println("Quiz Over! ");
             } catch (IOException e) {
                 e.printStackTrace();
             } finally {
